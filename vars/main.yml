@@ -17,96 +17,40 @@ dotfiles_files:
   - .gitignore_global
 
 npm_modules:
-  - vmd
-  - osx-wifi-cli
-  - eslint
-  - estraverse
-  - estraverse-fb
-  - eslint-plugin-react
-  - eslint-plugin-flowtype-errors
-  - eslint-plugin-import
-  - eslint-plugin-promise
-  - babel-eslint
+  # - osx-wifi-cli
 
 homebrew_taps:
   - caskroom/cask
-  - macvim-dev/macvim
 
 homebrew_cask_apps:
-  - mojibar
-  - iterm2
-  - 1clipboard
-  - franz
+  - 1password
+  - airmail-beta
   - atom
+  - ccmenu
+  - daisydisk
   - docker
-  - docker-toolbox
-  - vivaldi
-  - gitter
-  - omnifocus
-  - vmware-fusion
+  - firefox
+  - iterm2
   - keybase
-  - gpgtools
-  - nvalt
-  - packages
-  - hammerspoon
-  - suspicious-package
-  - dash
-  - malwarebytes-anti-malware
-  - mancy
-  - pacifist
-  - autodmg
-  - netspot
-  - wireshark
-  - sequel-pro
-  - ransomwhere
-  - oversight
-  - taskexplorer
-  - knockknock
-  - karabiner-elements
-  - launchcontrol
-  - hazel
-  - brave
+  - signal
 
 homebrew_installed_packages:
   - terraform
   - python3
-  - { name: macvim-dev/macvim/macvim, state: head }
-  - lastpass-cli
-  - awscli
-  - keybase
   - osquery
   - node
-  - zsh
-  - zsh-completions
-  - zsh-syntax-highlighting
   - tree
-  - hub
-  - reattach-to-user-namespace
-  - pwgen
-  - ttyrec
-  - docker
-  - tmux
   - dockutil
 
 homebrew_package_options:
-  macvim-dev/macvim/macvim:
-    - with-override-system-vim
+  # macvim-dev/macvim/macvim:
+  #   - with-override-system-vim
 
 git_repos:
-  - { repo: "https://github.com/jay0lee/GAM.git",
-      dest: "{{ utilities_location }}/GAM/" }
-  - { repo: "https://github.com/VundleVim/Vundle.vim.git",
-      dest: "~/.vim/bundle/Vundle.vim" }
-  - { repo: "https://github.com/powerline/fonts.git",
-      dest: "{{ utilities_location }}/powerline-fonts/" }
-
+  # - { repo: "https://github.com/powerline/fonts.git",
+  #     dest: "{{ utilities_location }}/powerline-fonts/" }
 
 python_packages:
-  - { name: tmuxomatic, extra_args: --upgrade, executable: pip3 }
-  - { name: virtualenv, become: yes }
-  - { name: virtualenvwrapper, extra_args: "--ignore-installed six", become: yes }
-  - { name: ipython, executable: pip3 }
-  - { name: cookiecutter, become: yes }
 
 dockitems_to_remove:
   - all

@@ -1,6 +1,6 @@
 ---
 
-utilities_location: "~/UtilityRepos"
+utilities_location: "~"
 
 user_shell: /bin/bash
 

@@ -7,6 +7,6 @@
 
   roles:
     - { name: homebrew, when: ansible_os_family == "Darwin" }
-    - { name: geerlingguy.dotfiles, tags: [dotfiles] }
+    # - { name: geerlingguy.dotfiles, tags: [dotfiles] }
   tasks:
     - include: tasks/main.yml

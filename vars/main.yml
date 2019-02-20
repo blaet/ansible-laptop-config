@@ -135,19 +135,4 @@ dockitems_to_persist:
     pos: 6
 
 mas_apps:
-  - CCMenu
-  - CreateUserPkg
-  - Pixelmator
-  - "Electron APIs"
-  - "Tweetbot for Twitter"
-  - Monosnap
-  - "WiFi Signal"
-  - "WiFi Explorer"
-  - Dash
-  - Slack
-  - PullRequestMenu
-  - DaisyDisk
-  - "Apple Remote Desktop"
-  - "1Password - Password Manager and Secure Wallet"
-  - Pocket
-  - "JSS MUT"
+  # - Pixelmator

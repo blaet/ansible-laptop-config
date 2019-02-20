@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# Check if the mas-cli exists and look up the latest release to install 
+# Ensure any fault stops script execution
+set -e
+
+# Check if the mas-cli exists and look up the latest release to install
 # mas-cli recommends using brew, but the ansible playbook will install brew for us
 if [ ! -f /usr/local/bin/mas ]; then
     echo "mas-cli was not found! Looking up latest version from Github releases"

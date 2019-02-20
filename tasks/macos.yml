@@ -28,10 +28,3 @@
 
 - name: Include Fixes for Homebrew links and apps
   include: homebrew_fixes.yml
-
-- name: Install Powerline Fonts
-  shell: "./install.sh && touch /Users/Shared/.fonts-installed.txt"
-  args:
-    chdir: "{{ utilities_location }}/powerline-fonts"
-    creates: /Users/Shared/.fonts-installed.txt
-

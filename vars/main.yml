@@ -112,24 +112,51 @@ dockitems_to_remove:
   - all
 
 dockitems_to_persist:
-  - name: Gitter
-    path: "/Applications/Gitter.app"
+  - name: Firefox
+    path: "/Applications/Firefox.app"
     pos: 1
-  - name: iTerm
-    path: "/Applications/iTerm.app"
+  - name: Airmail Beta
+    path: "/Applications/Airmail Beta.app"
     pos: 2
-  - name: Vivaldi
-    path: "/Applications/Vivaldi.app"
+  - name: Contacts
+    path: "/Applications/Contacts.app"
     pos: 3
-  - name: Atom
-    path: "/Applications/Atom.app"
+  - name: Calendar
+    path: "/Applications/Calendar.app"
     pos: 4
-  - name: Franz
-    path: "/Applications/Franz.app"
+  - name: Signal
+    path: "/Applications/Signal.app"
     pos: 5
+  - name: Telegram
+    path: "/Applications/Telegram.app"
+    pos: 6
   - name: Messages
     path: "/Applications/Messages.app"
-    pos: 6
+    pos: 7
+  - name: Slack
+    path: "/Applications/Slack.app"
+    pos: 8
+  - name: Spotify
+    path: "/Applications/Spotify.app"
+    pos: 9
+  - name: 1Password 7
+    path: "/Applications/1Password 7.app"
+    pos: 10
+  - name: Atom
+    path: "/Applications/Atom.app"
+    pos: 11
+  - name: Fork
+    path: "/Applications/Fork.app"
+    pos: 12
+  - name: iTerm
+    path: "/Applications/iTerm.app"
+    pos: 13
+  - name: System Preferences
+    path: "/Applications/System Preferences.app"
+    pos: 14
+  - name: Downloads
+    path: "/Users/{{ ansible_user }}/Downloads/"
+    pos: 15
 
 mas_apps:
   # - Pixelmator

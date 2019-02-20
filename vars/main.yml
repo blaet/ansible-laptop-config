@@ -2,7 +2,7 @@
 
 utilities_location: "~/UtilityRepos"
 
-user_shell: /bin/zsh
+user_shell: /bin/bash
 
 dotfiles_repo: "https://github.com/kylecrawshaw/dotfiles.git"
 dotfiles_repo_local_destination: "{{ utilities_location }}/dotfiles"

@@ -9,15 +9,18 @@
   tags:
     - npm
 
+
 - name: Clone Git Repos
   git:
     repo: "{{ item.repo }}"
     dest: "{{ item.dest }}"
   with_items: "{{ git_repos }}"
 
+
 - name: Install easy_install packages
   easy_install:
     name: ipython
+
 
 - name: Install Python Packages
   pip:
@@ -28,6 +31,7 @@
   with_items: "{{ python_packages }}"
   tags:
       - python
+
 
 - name: Include macOS Tasks
   include: macos.yml

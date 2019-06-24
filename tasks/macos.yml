@@ -34,5 +34,15 @@
     - dock
 
 
+- name: Ensure standby mode behaves properly
+  shell: "sudo pmset -a {{ item }}"
+  with_items:
+    - powernap 0
+    - standby 0
+    - standbydelayhigh 0
+    - standbydelaylow 0
+    - autopoweroff 0
+
+
 - name: Include Fixes for Homebrew links and apps
   include: homebrew_fixes.yml

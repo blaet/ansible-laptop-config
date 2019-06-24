@@ -59,8 +59,8 @@ dockitems_to_persist:
   - name: Firefox
     path: "/Applications/Firefox.app"
     pos: 1
-  - name: Airmail Beta
-    path: "/Applications/Airmail Beta.app"
+  - name: "Postbox"
+    path: "/Applications/Postbox.app"
     pos: 2
   - name: Contacts
     path: "/Applications/Contacts.app"
@@ -68,39 +68,42 @@ dockitems_to_persist:
   - name: Calendar
     path: "/Applications/Calendar.app"
     pos: 4
+  - name: Notes
+    path: "/Applications/Notes.app"
+    pos: 5
   - name: Signal
     path: "/Applications/Signal.app"
-    pos: 5
+    pos: 6
   - name: Telegram
     path: "/Applications/Telegram.app"
-    pos: 6
+    pos: 7
   - name: Messages
     path: "/Applications/Messages.app"
-    pos: 7
+    pos: 8
   - name: Slack
     path: "/Applications/Slack.app"
-    pos: 8
+    pos: 9
   - name: Spotify
     path: "/Applications/Spotify.app"
-    pos: 9
+    pos: 10
   - name: "1Password 7"
     path: "/Applications/1Password 7.app"
-    pos: 10
+    pos: 11
   - name: Atom
     path: "/Applications/Atom.app"
-    pos: 11
+    pos: 12
   - name: Fork
     path: "/Applications/Fork.app"
-    pos: 12
+    pos: 13
   - name: iTerm
     path: "/Applications/iTerm.app"
-    pos: 13
+    pos: 14
   - name: "System Preferences"
     path: "/Applications/System Preferences.app"
-    pos: 14
+    pos: 15
   - name: Downloads
     path: "/Users/{{ ansible_user }}/Downloads/"
-    pos: 15
+    pos: 16
 
 mas_apps: []
   # - Pixelmator

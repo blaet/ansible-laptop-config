@@ -17,9 +17,9 @@
   with_items: "{{ git_repos }}"
 
 
-- name: Install easy_install packages
-  easy_install:
-    name: ipython
+# - name: Install easy_install packages
+#   easy_install:
+#     name: ipython
 
 
 - name: Install Python Packages

@@ -10,20 +10,24 @@
     - macos
 
 
-- block:
+- name: Configure the Dock
+  block:
+    - name: Disable showing recent files
+      shell: "defaults write com.apple.dock show-recents -bool false"
+
     - name: Remove specified items from Dock
-      shell: "dockutil --remove {{ item }}"
+      shell: "dockutil --remove '{{ item }}'"
       ignore_errors: true
       with_items: "{{ dockitems_to_remove }}"
 
 
     - name: Check if items in dock exist
-      shell: "dockutil --find {{ item.name }} || dockutil --add {{ item.path }}"
+      shell: "dockutil --find '{{ item.name }}' || dockutil --add '{{ item.path }}'"
       with_items: "{{ dockitems_to_persist }}"
 
 
     - name: Fix order
-      shell: "dockutil --move {{ item.name }} --position {{ item.pos }}"
+      shell: "dockutil --move '{{ item.name }}' --position {{ item.pos }}"
       with_items: "{{ dockitems_to_persist }}"
   tags:
     - macos

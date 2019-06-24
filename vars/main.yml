@@ -16,7 +16,7 @@ dotfiles_files:
   - .gitconfig
   - .gitignore_global
 
-npm_modules:
+npm_modules: []
   # - osx-wifi-cli
 
 homebrew_taps:
@@ -42,15 +42,15 @@ homebrew_installed_packages:
   - tree
   - dockutil
 
-homebrew_package_options:
+homebrew_package_options: []
   # macvim-dev/macvim/macvim:
   #   - with-override-system-vim
 
-git_repos:
+git_repos: []
   # - { repo: "https://github.com/powerline/fonts.git",
   #     dest: "{{ utilities_location }}/powerline-fonts/" }
 
-python_packages:
+python_packages: []
 
 dockitems_to_remove:
   - all
@@ -83,7 +83,7 @@ dockitems_to_persist:
   - name: Spotify
     path: "/Applications/Spotify.app"
     pos: 9
-  - name: 1Password 7
+  - name: "1Password 7"
     path: "/Applications/1Password 7.app"
     pos: 10
   - name: Atom
@@ -95,12 +95,12 @@ dockitems_to_persist:
   - name: iTerm
     path: "/Applications/iTerm.app"
     pos: 13
-  - name: System Preferences
+  - name: "System Preferences"
     path: "/Applications/System Preferences.app"
     pos: 14
   - name: Downloads
     path: "/Users/{{ ansible_user }}/Downloads/"
     pos: 15
 
-mas_apps:
+mas_apps: []
   # - Pixelmator

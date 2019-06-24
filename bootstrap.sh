@@ -45,4 +45,4 @@ logged_in_user=$(python -c "import SystemConfiguration, sys; sys.stdout.write(Sy
 
 # Install ansible-galaxy roles and run main playbook
 sudo -u "$logged_in_user" ansible-galaxy install -r requirements.yml
-sudo -u "$logged_in_user" ansible-playbook -i "localhost," main.yml $@
+sudo -u "$logged_in_user" ansible-playbook -i "localhost," --extra-vars "ansible_user=$logged_in_user" main.yml $@
